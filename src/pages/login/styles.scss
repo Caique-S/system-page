@@ -1,0 +1,90 @@
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    img{
+      width: 150px;
+      height: 150px;
+    }
+  
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  
+  }
+  
+  h2 {
+    color: #5c5c5c;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    color: #5c5c5c;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    height: 5vh;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dfdfdf;
+    border-radius: 50px;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: #e76800;
+      border: 1px solid #e76800;
+      outline: none;
+    }
+  }
+  
+  button {
+    background-color: #F87700;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;  
+    
+    svg{
+      font-size: 1.2rem;
+      color: var(--white);
+      animation: rotate 2s linear infinite;
+    }
+
+    &.loginGoogle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2vh;
+      width: 55vw;
+      .gLogo{
+        margin-right: 1px;
+        font-size: 1.5rem;
+        animation:none
+      }
+    }
+
+    &.loginMicrosoft {
+      width: 55vw;
+    }
+
+  }
+
+  
+  
+  a {
+    color: #F87700;
+    text-decoration: none;
+  }
+}
+

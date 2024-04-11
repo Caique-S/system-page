@@ -1,0 +1,84 @@
+.register-container {
+    display: flex;
+    flex: 1;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+  
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        height: 5vh;
+        padding: 10px;
+        border: 1px solid #dfdfdf;
+        margin-top: 5px;
+        border-radius: 50px;
+        box-sizing: border-box;
+        color:var(--text);
+  
+        &:focus {
+          border-color: var(--primary);
+          border: 1px solid #e76800;
+          outline: none;
+        }
+      }
+  
+      button {
+        margin-top: 3vh;
+        background-color: var(--primary);
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        svg{
+          font-size: 1.2rem;
+          color: var(--white);
+          animation: rotate 2s linear infinite;
+        }
+      }
+    }
+  
+    a {
+      color: #F87700;
+      text-decoration: none;
+    }
+  }
+  .modal-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+  .modal-button{
+    width: 60%;
+  }
+ 
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
